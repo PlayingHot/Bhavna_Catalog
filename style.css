@@ -95,22 +95,11 @@ header {
     font-weight: bold;
 }
 
-.perfume_list{
-    font-style: oblique;
-    text-align: justify;
+.list_perfume{
+    list-style: none;
+
 }
 
-#perfume_img{
-    height: 100px;
-    width: 100px;
-   position: absolute;
-   left: 70%;
-}
-#perfume_sub{
-    position: absolute;
-    left: 50%;
-    
-}
 
 footer {
     background-color: #333;
