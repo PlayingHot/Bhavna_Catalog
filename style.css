@@ -61,6 +61,7 @@ header {
 }
 #head{
     font-size: xx-large;
+    text-align: center;
 }
 .list{
     list-style: none;
@@ -92,6 +93,23 @@ header {
 .price {
     color: blueviolet;
     font-weight: bold;
+}
+
+.perfume_list{
+    font-style: oblique;
+    text-align: justify;
+}
+
+#perfume_img{
+    height: 200px;
+    width: 200px;
+   position: absolute;
+   left: 70%;
+}
+#perfume_sub{
+    position: absolute;
+    left: 50%;
+    
 }
 
 footer {
