@@ -8,11 +8,29 @@
 </head>
 <body>
 
-    <header>
+    <div id="bar">
         <h1>Catalog Page</h1>
-    </header>
+        <nav>
+          <div class="dropdown">
+            <a href="#">Categories</a>
+            <div class="dropdown-content">
+              <a href="#shampoo">Shampoo</a>
+              <a href="#facewash">Facewash</a>
+              <a href="#kajal">Kajal</a>
+              <a href="#lipsticks">Lipsticks</a>
+              <a href="#eye_liner">Eye Liner</a>
+              <a href="#hair_conditioner">Hair Conditioner</a>
+              <a href="#lip_balm">Lip Balm</a>
+              <a href="#perfume">Perfume</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+      
 
-    <section class="shampoo">
+
+    <section class="shampoo" id="shampoo">
         <h2 id="head">Shampoo</h2>
         <ul>
             <li class="list"><img class="list_img" src="./img/1.jpg" alt="Charcoal Shampoo">
@@ -44,7 +62,7 @@
     </section>
 
     
-    <section class="facewash">
+    <section class="facewash" id="facewash">
         <h2 id="head">Face Wash</h2>
         <ul>
             <li class="list"><img class="list_img" src="./img/7.jpg" alt="Orange Face Wash">
@@ -72,7 +90,7 @@
     </ul>
     </section>
 
-    <section class="kajal">
+    <section class="kajal" id="kajal">
         <h2 id="head">Kajal</h2>
         <ul>
             <li class="list"><img class="list_img" src="./img/14.jpg" alt="kajal">
@@ -83,7 +101,7 @@
                                     
     </ul>
     </section>
-    <section class="lipsticks">
+    <section class="lipsticks" id="lipsticks">
         <h2 id="head">Lipsticks</h2>
         <ul>
             <li class="list"><img class="list_img" src="./img/15.jpg" alt="Lipstick_1">
@@ -100,7 +118,7 @@
                                     
     </ul>
     </section>
-    <section class="lipsticks">
+    <section class="lipsticks" id="eye_liner">
         <h2 id="head">Eye-Liner</h2>
         <ul>
             <li class="list"><img class="list_img" src="./img/18.jpg" alt="Eye-Liner">
@@ -109,7 +127,7 @@
     </ul>
     </section>
 </section>
-<section class="lipsticks">
+<section class="lipsticks" id="hair_conditioner">
     <h2 id="head">Hair Conditioner</h2>
     <ul>
         <li class="list"><img class="list_img" src="./img/19.jpg" alt="Conditioner">
@@ -118,7 +136,7 @@
         </li>                   
 </ul>
 </section>
-<section class="lipsticks">
+<section class="lipsticks" id="lip_balm">
     <h2 id="head">Lip Balm</h2>
     <ul>
         <li class="list"><img class="list_img" src="./img/20.jpg" alt="LipBalm">
@@ -131,7 +149,7 @@
         </li>
 </ul>
 </section>
-<section class="lipsticks">
+<section class="lipsticks" id="perfume">
     <h2 id="head">Perfume</h2>
 <ul>
     <li class="list_perfume"><img class="list_img" src="./img/22.jpg" alt="Perfumes">
@@ -169,4 +187,24 @@
     </footer>
 
 </body>
+<script>
+    //For footer-scrolling
+    document.addEventListener("DOMContentLoaded", function() {
+      var lastScrollTop = 0;
+  
+      window.addEventListener("scroll", function() {
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+  
+        if (st > lastScrollTop) {
+    
+          document.querySelector("footer").classList.add("hidden");
+        } else {
+    
+          document.querySelector("footer").classList.remove("hidden");
+        }
+  
+        lastScrollTop = st <= 0 ? 0 : st;
+      });
+    });
+  </script>
 </html>
